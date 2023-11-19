@@ -1,0 +1,410 @@
+*,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2%;
+  background-color: #fbffff;
+  border-bottom: 1px solid #2e3232;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  font-family: "DM SANS";
+  font-weight: 600;
+}
+
+.navbar .navbar-logo {
+  max-width: 100px;
+}
+
+.navbar .navbar-nav a {
+  color: #2e3232;
+  display: inline-block;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+.navbar .navbar-nav a:hover {
+  color: #0b50a1;
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.1rem solid #0b50a1;
+  transform: scaleX(0);
+  transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: #2e3232;
+  margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+  color: #0b50a1;
+}
+
+.main {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("https://www.yonex.com/media/scandiweb/slider/y/n/ynx_nf800_banner_01_en_2880-1120.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.profil h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  font-family: "DM SANS";
+}
+
+.profil .konten {
+  display: flex;
+}
+
+.profil .konten .profil-img {
+  flex: 1 1 20rem;
+}
+
+.profil .konten .profil-img img {
+  width: 100%;
+}
+
+.profil .konten .isikonten {
+  flex: 1 1 25rem;
+  padding: 0 1rem;
+}
+
+.profil .konten .isikonten h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.profil .konten .isikonten p {
+  margin-bottom: 0.8rem;
+  font-size: 1rem;
+  font-weight: 100;
+  line-height: 1.6;
+  font-family: "DM SANS";
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 7rem;
+  margin-bottom: 0.1rem;
+  font-family: "DM SANS";
+}
+
+.container a {
+  text-decoration: none;
+  color: #0b50a1;
+  font-weight: 700;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 80px;
+  margin-right: 20px;
+  padding-bottom: 15px;
+  align-items: center;
+  grid-gap: 30px;
+  font-family: "DM SANS";
+}
+
+img {
+  object-fit: contain;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
+.footer {
+  background-color: #2e3232;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 50px 50px 60px 50px;
+  margin-top: 80px;
+}
+
+.footer .footer-left,
+.footer .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media (max-height: 800px) {
+  footer {
+    position: static;
+  }
+
+  header {
+    padding-top: 40px;
+  }
+}
+
+.footer .footer-left {
+  width: 30%;
+}
+
+.footer h3 {
+  color: #f5f5f5;
+  margin-left: 40px;
+  padding-bottom: 20px;
+  font-family: "DM SANS";
+  font-size: 10px;
+}
+
+.footer .footer-left img {
+  width: 50%;
+  vertical-align: middle;
+  padding-bottom: 10px;
+}
+
+.footer .footer-left .logo-yonex {
+  width: 100%;
+}
+
+.footer .footer-copyright {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+  padding-top: 50px;
+}
+
+.footer .footer-right {
+  width: 65%;
+}
+
+.footer .footer-media {
+  margin-top: 25px;
+  float: right;
+  margin: 0;
+}
+
+.footer .footer-media a {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 60px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+.footer .footer-media a:hover {
+  background-color: #0b50a1;
+}
+
+/* Artikel 1 */
+
+.artikelone {
+  padding-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: "DM SANS";
+}
+
+.artikelone .tulisan {
+  margin-left: 7rem;
+}
+
+.artikelone .fotosatu {
+  margin-left: 7em;
+  margin-right: 5rem;
+}
+
+.artikelone .paragraf {
+  margin-left: 7rem;
+  margin-right: 5rem;
+}
+
+.aboutyonex {
+  padding-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: "DM SANS";
+}
+
+.product-menu {
+  text-align: center;
+  width: 100%;
+  padding: 5rem;
+  padding-bottom: 10rem;
+  font-family: "dm sans";
+}
+
+.description {
+  padding-bottom: 50px;
+}
+
+.list-produk {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.style-produk {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.style-produk img {
+  width: 80%;
+  border-radius: 50%;
+}
+
+.style-produk p {
+  font-family: "dm sans";
+  font-weight: 800;
+  font-size: 25px;
+  text-align: center;
+  color: #2e3232;
+}
+
+.style-produk a {
+  text-decoration: none;
+}
+
+.style-produk a :hover {
+  transform: scale(1.2);
+}
+
+/* css baru buat raket */
+
+.description {
+  padding-bottom: 50px;
+}
+
+.produk-yonex {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.daftar-produk {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.daftar-produk img {
+  width: 80%;
+  border-radius: 50%;
+}
+
+.daftar-produk p {
+  font-family: "dm sans";
+  font-weight: 800;
+  font-size: 21px;
+  text-align: center;
+  color: #2e3232;
+}
+
+.daftar-produk a {
+  text-decoration: none;
+}
+
+.daftar-produk a :hover {
+  transform: scale(1.2);
+}
+
+.produk-yonex-2 {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 120px;
+}
+
+.kontener {
+  margin-left: 300px;
+  font-family: "dm sans";
+}
+.card-kontener {
+  padding-top: 100px;
+  margin-left: 50px;
+  max-width: 100vh;
+}
+
+.isikontak {
+  display: flex;
+  height: 460px;
+  justify-content: center;
+  align-items: center;
+}
+
+.isikontak h1 {
+  text-align: center;
+}
+
+input,
+textarea {
+  background-color: #eee;
+  border: none;
+  padding: 12px 15px;
+  margin: 8px 0;
+  width: 100%;
+  font-size: 0.8rem;
+  font-family: "dm sans";
+}
+
+button {
+  border-radius: 20px;
+  border: 1px solid #0b50a1;
+  background-color: #0b50a1;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-out;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+textarea {
+  height: 90px;
+}
